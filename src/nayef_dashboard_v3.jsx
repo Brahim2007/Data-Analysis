@@ -281,6 +281,7 @@ export default function NayefDashboard() {
   const [tab,      setTab]     = useState("overview");
   const [imgErr,   setImgErr]  = useState(false);
   const [printing, setPrinting]= useState(false);
+  const [glossOpen,setGlossOpen]= useState(true);
 
   const handleExport = () => {
     setPrinting(true);
@@ -366,6 +367,55 @@ export default function NayefDashboard() {
     </div>
   );
 
+  /* ── Term Tooltip ── */
+  const TERMS = {
+    "RPM":              { en:"Revenue Per Mille",                      simple:"الإيراد لكل ألف مشاهدة", detail:"كم دولاراً تكسب من كل 1,000 مشاهدة. مثال: RPM = $2 يعني أنك كسبت دولارين مقابل كل ألف شخص شاهدوا فيديوهاتك." },
+    "CTR":              { en:"Click-Through Rate",                     simple:"نسبة النقر على الفيديو",  detail:"من كل 100 شخص رأوا صورة الغلاف (ثمبنيل) في يوتيوب، كم شخص نقر وشاهد؟ CTR 7% تعني 7 من كل 100." },
+    "ARIMA":            { en:"Auto-Regressive Integrated Moving Average", simple:"نموذج التنبؤ الرياضي", detail:"طريقة إحصائية تستخدم بيانات الأشهر الـ 12 الماضية لتوقع عدد مشتركيك في المستقبل. الخط المتقطع في الرسوم البيانية هو هذا التوقع." },
+    "CMGR":             { en:"Compound Monthly Growth Rate",           simple:"معدل النمو الشهري المتراكم", detail:"متوسط نمو قناتك كل شهر مع احتساب تأثير النمو التراكمي. يشبه فكرة الفائدة المركبة في البنك." },
+    "متوسط الصناعة":   { en:"Industry Average",                      simple:"المعدل الطبيعي لقنوات مشابهة", detail:"أداء قنوات الأناشيد العربية المشابهة لقناتك. إذا كنت أعلى منه فأنت متميز وتتفوق على المنافسين." },
+  };
+  const [tipOpen, setTipOpen] = useState({});
+  const TermTip = ({ id, children }) => {
+    const def = TERMS[id];
+    if (!def) return <span>{children || id}</span>;
+    const open = !!tipOpen[id];
+    return (
+      <span style={{ position:"relative", display:"inline" }}>
+        <span
+          onMouseEnter={()=>setTipOpen(p=>({...p,[id]:true}))}
+          onMouseLeave={()=>setTipOpen(p=>({...p,[id]:false}))}
+          onClick={()=>setTipOpen(p=>({...p,[id]:!p[id]}))}
+          style={{
+            borderBottom:`1.5px dashed ${T.gold}80`,
+            cursor:"help", color:"inherit", display:"inline",
+          }}
+        >{children || id}</span>
+        {open && (
+          <span style={{
+            position:"absolute", bottom:"calc(100% + 8px)", right:0,
+            background:T.tooltipBg, border:`1.5px solid ${T.borderAccent}`,
+            borderRadius:12, padding:"12px 16px", zIndex:9999,
+            minWidth:240, maxWidth:310,
+            boxShadow:"0 8px 28px rgba(0,0,0,0.22)",
+            direction:"rtl", display:"block",
+          }}>
+            <span style={{ display:"flex", alignItems:"center", gap:8, marginBottom:5 }}>
+              <strong style={{ color:T.gold, fontSize:13, fontFamily:"'IBM Plex Sans Arabic',sans-serif" }}>{id}</strong>
+              <span style={{ color:T.textMuted, fontSize:10, fontFamily:"monospace" }}>{def.en}</span>
+            </span>
+            <span style={{ display:"block", color:T.amber, fontWeight:700, fontSize:12, fontFamily:"'IBM Plex Sans Arabic',sans-serif", marginBottom:5 }}>
+              ✦ {def.simple}
+            </span>
+            <span style={{ display:"block", color:T.textSub, fontSize:12, fontFamily:"'IBM Plex Sans Arabic',sans-serif", lineHeight:1.75 }}>
+              {def.detail}
+            </span>
+          </span>
+        )}
+      </span>
+    );
+  };
+
   /* ── KPI Card ── */
   const KpiCard = ({ icon, label, value, sub, trend, benchmark, delay, formula }) => {
     const [vis,setVis]   = useState(false);
@@ -391,7 +441,7 @@ export default function NayefDashboard() {
           {trend>0?"▲":"▼"} {Math.abs(trend)}% {sub}
         </p>
         {benchmark && <p style={{ color:T.textMuted, fontSize:11, fontFamily:"'IBM Plex Sans Arabic',sans-serif", margin:"0 0 5px" }}>
-          متوسط الصناعة: <span style={{ color:T.textSub }}>{benchmark}</span></p>}
+          <TermTip id="متوسط الصناعة">متوسط الصناعة</TermTip>: <span style={{ color:T.textSub }}>{benchmark}</span></p>}
         {formula && (
           <>
             <button onClick={()=>setShow(v=>!v)} style={{
@@ -741,6 +791,58 @@ export default function NayefDashboard() {
           {TABS.map(t=><TabBtn key={t.id} active={tab===t.id} onClick={()=>setTab(t.id)}>{t.label}</TabBtn>)}
         </div>
 
+        {/* ════ دليل المصطلحات ════ */}
+        <div className="no-print" style={{
+          background:dark?"rgba(184,134,11,0.06)":"rgba(184,134,11,0.04)",
+          border:`1px solid ${dark?"rgba(184,134,11,0.25)":"rgba(184,134,11,0.2)"}`,
+          borderRadius:14, marginBottom:20, overflow:"hidden",
+          direction:"rtl",
+        }}>
+          <button
+            onClick={()=>setGlossOpen(v=>!v)}
+            style={{
+              width:"100%", background:"transparent", border:"none",
+              padding:"12px 18px", cursor:"pointer",
+              display:"flex", alignItems:"center", justifyContent:"space-between",
+            }}
+          >
+            <span style={{ display:"flex", alignItems:"center", gap:8 }}>
+              <span style={{ fontSize:16 }}>📖</span>
+              <span style={{ color:T.gold, fontWeight:700, fontSize:13, fontFamily:"'IBM Plex Sans Arabic',sans-serif" }}>
+                دليل المصطلحات — اضغط على أي مصطلح باللون الذهبي المسطّر لقراءة تعريفه
+              </span>
+            </span>
+            <span style={{ color:T.gold, fontSize:14 }}>{glossOpen ? "▲" : "▼"}</span>
+          </button>
+          {glossOpen && (
+            <div style={{
+              padding:"0 18px 16px",
+              display:"grid",
+              gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))",
+              gap:10,
+            }}>
+              {Object.entries(TERMS).map(([key, def]) => (
+                <div key={key} style={{
+                  background:dark?"rgba(255,255,255,0.03)":"rgba(255,255,255,0.7)",
+                  border:`1px solid ${T.border}`,
+                  borderRadius:10, padding:"11px 14px",
+                }}>
+                  <div style={{ display:"flex", alignItems:"baseline", gap:8, marginBottom:4 }}>
+                    <strong style={{ color:T.gold, fontSize:13, fontFamily:"monospace" }}>{key}</strong>
+                    <span style={{ color:T.textMuted, fontSize:10 }}>{def.en}</span>
+                  </div>
+                  <p style={{ color:T.amber, fontWeight:700, fontSize:12, fontFamily:"'IBM Plex Sans Arabic',sans-serif", margin:"0 0 4px" }}>
+                    ✦ {def.simple}
+                  </p>
+                  <p style={{ color:T.textSub, fontSize:12, fontFamily:"'IBM Plex Sans Arabic',sans-serif", lineHeight:1.7, margin:0 }}>
+                    {def.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
         {/* ════════════════════════════════════
             TAB: نظرة عامة
         ════════════════════════════════════ */}
@@ -756,7 +858,7 @@ export default function NayefDashboard() {
                 formula="معدل التفاعل = (الإعجابات + التعليقات + المشاركات) ÷ المشاهدات × 100. 6.8% يضعك في أعلى 10% من قنوات الأناشيد الخليجية." />
               <KpiCard icon="⏱️" label="متوسط مدة المشاهدة" value="4:32"  sub="دقيقة/فيديو" trend={0.8}  benchmark="3:15 متوسط" delay={240}
                 formula="متوسط مدة المشاهدة = إجمالي دقائق المشاهدة ÷ عدد المشاهدات. 4:32 من متوسط فيديو 4:45 = احتفاظ 95% من طول الفيديو." />
-              <KpiCard icon="🎯" label="نسبة النقر (CTR)"   value="6.8%"  sub="معدل النقر على الفيديو" trend={0.5} benchmark="4–5% متوسط" delay={320}
+              <KpiCard icon="🎯" label="نسبة النقر على الفيديو (CTR)"   value="6.8%"  sub="من كل 100 شخص رأوا الغلاف" trend={0.5} benchmark="4–5% متوسط" delay={320}
                 formula="CTR = (النقرات ÷ مرات الظهور) × 100. كل 1% زيادة في CTR = ~150K مشاهدة إضافية شهرياً." />
             </div>
 
@@ -875,8 +977,8 @@ export default function NayefDashboard() {
           {printing && <h2 style={{ color:"#B8860B", fontFamily:"'IBM Plex Sans Arabic',sans-serif", fontSize:16, fontWeight:700, direction:"rtl", borderBottom:"1px solid #E2D9C8", paddingBottom:8, marginBottom:4 }}>📈 النمو والتوقعات</h2>}
             <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))", gap:13 }} className="responsive-grid-1">
               {[
-                { label:"معدل النمو المركّب (CMGR)", value:"10.6%", icon:"📈", color:T.gold,
-                  sub:"متوسط الصناعة 5.2%",
+                { label:"معدل نمو قناتك شهرياً (CMGR)", value:"10.6%", icon:"📈", color:T.gold,
+                  sub:"متوسط قنوات مشابهة 5.2%",
                   formula:"CMGR = ((572K÷180K)^(1/12)-1)×100 = 10.6%. معدل تصاعدي لا مستقر." },
                 { label:"توقع المشتركين (6 أشهر)", value:"801K", icon:"🔮", color:T.amber,
                   sub:"بنموذج ARIMA فاصل ثقة 90%",
@@ -901,7 +1003,7 @@ export default function NayefDashboard() {
               ))}
             </div>
 
-            <SCard title="🔮 توقع نمو المشتركين — نموذج ARIMA(1,1,1)" subtitle="الخط المتصل = فعلي · المتقطع = متوقع · الفاصل الزمني: ديسمبر 2025">
+            <SCard title="🔮 توقع نمو المشتركين — نموذج التنبؤ الرياضي (ARIMA)" subtitle="الخط المتصل = بيانات فعلية · الخط المتقطع = توقعات مستقبلية · الفاصل: ديسمبر 2025">
               <ResponsiveContainer width="100%" height={255}>
                 <LineChart data={forecastData}>
                   <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid}/>
@@ -1110,7 +1212,7 @@ export default function NayefDashboard() {
                 </InsightBox>
               </SCard>
 
-              <SCard title="🎯 CTR حسب نوع المحتوى" subtitle="أي تصنيف يجذب أكثر نقرات؟">
+              <SCard title="🎯 نسبة النقر (CTR) حسب نوع المحتوى" subtitle="أي نوع أناشيد يجعل الناس يضغطون للمشاهدة أكثر؟">
                 <ResponsiveContainer width="100%" height={200}>
                   <BarChart data={ctrByTitle} layout="vertical" barSize={22}>
                     <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid} horizontal={false}/>
@@ -1373,8 +1475,8 @@ export default function NayefDashboard() {
                 { label:"أعلى شهر (ديسمبر)",      value:"14.1K$", icon:"🏆", color:T.amber,
                   note:"بسبب صفقة براند $8K + 3M مشاهدة",
                   formula:"ديسمبر: AdSense $6,100 (3.05M مشاهدة × $2/1000) + Brand Deal $8,000 = $14,100." },
-                { label:"متوسط RPM الشهري",       value:"$2.0",   icon:"📊", color:T.green,
-                  note:"مقابل متوسط الصناعة $1.2",
+                { label:"إيراد كل 1,000 مشاهدة (RPM)",       value:"$2.0",   icon:"📊", color:T.green,
+                  note:"مقابل متوسط قنوات الأناشيد $1.2",
                   formula:"RPM = (الإيرادات ÷ المشاهدات) × 1000. متوسط الصناعة لقنوات الأناشيد العربية: $1.2–1.8." },
                 { label:"عدد صفقات البراند 2024",  value:"3 صفقات",icon:"🤝", color:T.purple,
                   note:"مارس + يونيو + سبتمبر + ديسمبر",
