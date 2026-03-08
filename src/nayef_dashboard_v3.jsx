@@ -469,7 +469,41 @@ export default function NayefDashboard() {
         }}/>
       )}
 
-      <div style={{ maxWidth:1440, margin:"0 auto", padding:"22px 18px", position:"relative", zIndex:1 }}>
+       <div style={{ maxWidth:1440, margin:"0 auto", padding:"22px 18px", position:"relative", zIndex:1 }}>
+
+        {/* ════════════════ TITLE BANNER ════════════════ */}
+        <div style={{
+          background:dark?"linear-gradient(135deg,#1A1A3A,#2A2550)":"linear-gradient(135deg,#B8860B,#D4AF37)",
+          borderRadius:16, padding:"20px 25px", marginBottom:22,
+          border:`2px solid ${T.borderAccent}`,
+          boxShadow:`0 8px 32px ${dark?"rgba(212,175,55,0.15)":"rgba(184,134,11,0.2)"}`,
+          textAlign:"center", direction:"rtl",
+        }}>
+          <h1 style={{
+            fontSize:28, fontWeight:800, color:dark?"#F0E8D0":"#FFFFFF",
+            fontFamily:"'IBM Plex Sans Arabic',sans-serif", marginBottom:8,
+            textShadow:"0 2px 4px rgba(0,0,0,0.2)",
+          }}>📊 تقرير تحليل القناة المتقدم — نايف الشرهان</h1>
+          <p style={{
+            fontSize:16, color:dark?"#E8D080":"#FFF8E0",
+            fontFamily:"'IBM Plex Sans Arabic',sans-serif", fontWeight:500,
+            marginBottom:12,
+          }}>لوحة تحليل بيانات متكاملة مع توقعات النمو والتوصيات الاستراتيجية</p>
+          <div style={{
+            background:dark?"rgba(0,0,0,0.3)":"rgba(255,255,255,0.15)",
+            borderRadius:10, padding:"10px 15px", display:"inline-block",
+            border:`1px solid ${dark?"rgba(212,175,55,0.3)":"rgba(255,255,255,0.3)"}`,
+          }}>
+            <p style={{
+              fontSize:12, color:dark?"#C9935A":"#FFF3CC",
+              fontFamily:"'IBM Plex Sans Arabic',sans-serif", fontWeight:400,
+              margin:0,
+            }}>
+              ⚠️ <strong>ملاحظة:</strong> البيانات المعروضة هي <strong>لأغراض تجريبية وتوضيحية</strong> فقط، 
+              تهدف إلى إظهار شكل التقرير النهائي وليست بيانات حقيقية فعلية.
+            </p>
+          </div>
+        </div>
 
         {/* ════════════════ HEADER ════════════════ */}
         <div style={{
@@ -1594,6 +1628,16 @@ export default function NayefDashboard() {
           تقرير تحليل متقدم مدفوع · بيانات توضيحية · نايف الشرهان © 2024
           <br/>ARIMA · VADER NLP · TF-IDF · SWOT · Pearson Correlation · CMGR Analysis
           <br/>
+          <div style={{
+            background:dark?"rgba(184,134,11,0.08)":"rgba(184,134,11,0.05)",
+            borderRadius:8, padding:"8px 12px", margin:"12px auto", maxWidth:600,
+            border:`1px solid ${dark?"rgba(184,134,11,0.2)":"rgba(184,134,11,0.15)"}`,
+          }}>
+            <p style={{ color:T.gold, fontSize:11, fontFamily:"'IBM Plex Sans Arabic',sans-serif", fontWeight:600, margin:0 }}>
+              📌 <strong>تنويه:</strong> جميع البيانات والأرقام في هذا التقرير هي <strong>لأغراض تجريبية وتوضيحية</strong> فقط، 
+              تهدف إلى إظهار شكل التقرير النهائي وليست بيانات حقيقية فعلية. هذا نموذج توضيحي للتصميم والوظائف.
+            </p>
+          </div>
           <span className="no-print" style={{ color:T.textMuted, fontSize:10 }}>
             لتصدير PDF ملون: اضغط "تصدير PDF" ثم اختر "حفظ كـ PDF" في نافذة الطباعة مع تفعيل خيار "الألوان الخلفية"
           </span>
