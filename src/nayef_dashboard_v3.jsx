@@ -254,7 +254,6 @@ const fmtNum = n =>
 export default function NayefDashboard() {
   const [dark,     setDark]    = useState(false);
   const [tab,      setTab]     = useState("overview");
-  const [pulse,    setPulse]   = useState(false);
   const [imgErr,   setImgErr]  = useState(false);
   const [printing, setPrinting]= useState(false);
 
@@ -267,11 +266,6 @@ export default function NayefDashboard() {
   };
 
   const T = dark ? DARK : LIGHT;
-
-  useEffect(()=>{
-    const t = setInterval(()=>setPulse(p=>!p), 1800);
-    return ()=>clearInterval(t);
-  },[]);
 
   /* ── Tooltip ── */
   const ArabicTooltip = ({ active, payload, label }) => {
@@ -434,10 +428,16 @@ export default function NayefDashboard() {
         * { box-sizing:border-box; margin:0; padding:0; }
         ::-webkit-scrollbar { width:5px; height:5px; }
         ::-webkit-scrollbar-track { background:${T.bg3}; }
-        ::-webkit-scrollbar-thumb { background:${T.borderAccent}50; border-radius:3px; }
-        button:focus { outline:none; }
-        details summary { list-style:none; cursor:pointer; }
-        details summary::-webkit-details-marker { display:none; }
+         ::-webkit-scrollbar-thumb { background:${T.borderAccent}50; border-radius:3px; }
+         button:focus { outline:none; }
+         details summary { list-style:none; cursor:pointer; }
+         details summary::-webkit-details-marker { display:none; }
+
+         @keyframes pulse {
+           0% { box-shadow: 0 0 0 0 ${T.green}80; }
+           70% { box-shadow: 0 0 0 8px ${T.green}00; }
+           100% { box-shadow: 0 0 0 0 ${T.green}00; }
+         }
 
         /* ═══════ PRINT STYLES ═══════ */
         @media print {
@@ -530,8 +530,8 @@ export default function NayefDashboard() {
               border:`1px solid ${dark?"rgba(46,125,82,0.3)":"#A0D8B0"}`,
               borderRadius:20, padding:"5px 14px",
             }}>
-              <div style={{ width:7, height:7, borderRadius:"50%", background:T.green,
-                boxShadow:pulse?`0 0 8px ${T.green}`:"none", transition:"box-shadow 0.5s" }}/>
+               <div style={{ width:7, height:7, borderRadius:"50%", background:T.green,
+                 animation:"pulse 1.8s infinite", transition:"box-shadow 0.5s" }}/>
               <span style={{ color:T.green, fontSize:12, fontFamily:"'IBM Plex Sans Arabic',sans-serif" }}>بيانات حية</span>
             </div>
 
