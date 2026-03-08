@@ -664,9 +664,9 @@ export default function NayefDashboard() {
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid}/>
-                  <XAxis dataKey="month" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }}/>
-                  <YAxis yAxisId="l" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>fmtNum(v)}/>
-                  <YAxis yAxisId="r" orientation="right" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>fmtNum(v)}/>
+                   <XAxis dataKey="month" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                   <YAxis yAxisId="l" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>fmtNum(v)} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                   <YAxis yAxisId="r" orientation="right" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>fmtNum(v)} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                   <Tooltip content={<ArabicTooltip/>}/>
                   <Legend wrapperStyle={{ fontFamily:"IBM Plex Sans Arabic", fontSize:12, color:T.textSub }}/>
                   <Area yAxisId="l" type="monotone" dataKey="مشتركون" stroke={T.gold}  fill="url(#gSL)" strokeWidth={2.5} dot={false}/>
@@ -684,8 +684,8 @@ export default function NayefDashboard() {
                 <ResponsiveContainer width="100%" height={200}>
                   <BarChart data={publishDays} barSize={36}>
                     <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid} vertical={false}/>
-                    <XAxis dataKey="day" tick={{ fill:T.textMuted, fontSize:12, fontFamily:"IBM Plex Sans Arabic" }}/>
-                    <YAxis tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>fmtNum(v)}/>
+                     <XAxis dataKey="day" tick={{ fill:T.textMuted, fontSize:12, fontFamily:"IBM Plex Sans Arabic" }} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                     <YAxis tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>fmtNum(v)} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                     <Tooltip content={<ArabicTooltip/>}/>
                     <Bar dataKey="مشاهدات" radius={[7,7,0,0]}>
                       {publishDays.map((_,i)=>(
@@ -790,8 +790,8 @@ export default function NayefDashboard() {
               <ResponsiveContainer width="100%" height={255}>
                 <LineChart data={forecastData}>
                   <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid}/>
-                  <XAxis dataKey="month" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }}/>
-                  <YAxis tickFormatter={v=>fmtNum(v)} tick={{ fill:T.textMuted, fontSize:10 }}/>
+                   <XAxis dataKey="month" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                   <YAxis tickFormatter={v=>fmtNum(v)} tick={{ fill:T.textMuted, fontSize:10 }} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                   <Tooltip content={<ArabicTooltip/>}/>
                   <Legend wrapperStyle={{ fontFamily:"IBM Plex Sans Arabic", fontSize:12, color:T.textSub }}/>
                   <ReferenceLine x="ديسمبر" stroke={`${T.gold}60`} strokeDasharray="4 4"
@@ -945,8 +945,8 @@ export default function NayefDashboard() {
               <ResponsiveContainer width="100%" height={210}>
                 <ComposedChart data={videoLengthPerf} layout="vertical">
                   <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid} horizontal={false}/>
-                  <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}K`}/>
-                  <YAxis type="category" dataKey="length" tick={{ fill:T.textSub, fontSize:12, fontFamily:"IBM Plex Sans Arabic" }} width={80}/>
+                   <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}K`} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                   <YAxis type="category" dataKey="length" tick={{ fill:T.textSub, fontSize:12, fontFamily:"IBM Plex Sans Arabic" }} width={80} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                   <Tooltip content={<ArabicTooltip/>}/>
                   <Bar dataKey="avgViews" name="متوسط المشاهدات" radius={[0,7,7,0]}>
                     {videoLengthPerf.map((_,i)=>(
@@ -981,8 +981,8 @@ export default function NayefDashboard() {
                       </linearGradient>
                     </defs>
                     <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid}/>
-                    <XAxis dataKey="second" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }}/>
-                    <YAxis domain={[40,100]} tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}%`}/>
+                     <XAxis dataKey="second" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                     <YAxis domain={[40,100]} tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}%`} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                     <Tooltip content={<ArabicTooltip/>}/>
                     <ReferenceLine y={70} stroke={`${T.amber}80`} strokeDasharray="4 4"
                       label={{ value:"متوسط الصناعة 70%", fill:T.amber, fontSize:10, fontFamily:"IBM Plex Sans Arabic" }}/>
@@ -999,8 +999,8 @@ export default function NayefDashboard() {
                 <ResponsiveContainer width="100%" height={200}>
                   <BarChart data={ctrByTitle} layout="vertical" barSize={22}>
                     <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid} horizontal={false}/>
-                    <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}%`}/>
-                    <YAxis type="category" dataKey="type" tick={{ fill:T.textSub, fontSize:12, fontFamily:"IBM Plex Sans Arabic" }} width={95}/>
+                     <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}%`} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                     <YAxis type="category" dataKey="type" tick={{ fill:T.textSub, fontSize:12, fontFamily:"IBM Plex Sans Arabic" }} width={95} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                     <Tooltip content={<ArabicTooltip/>}/>
                     <Bar dataKey="ctr" radius={[0,7,7,0]} name="نسبة النقر">
                       {ctrByTitle.map((_,i)=>(
@@ -1051,8 +1051,8 @@ export default function NayefDashboard() {
                 <ResponsiveContainer width="100%" height={225}>
                   <BarChart data={ageData} layout="vertical" barSize={24}>
                     <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid} horizontal={false}/>
-                    <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}%`}/>
-                    <YAxis type="category" dataKey="group" tick={{ fill:T.textSub, fontSize:12, fontFamily:"IBM Plex Sans Arabic" }} width={50}/>
+                     <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}%`} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                     <YAxis type="category" dataKey="group" tick={{ fill:T.textSub, fontSize:12, fontFamily:"IBM Plex Sans Arabic" }} width={50} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                     <Tooltip content={<ArabicTooltip/>}/>
                     <Bar dataKey="نسبة" radius={[0,7,7,0]}>
                       {ageData.map((_,i)=>(
@@ -1152,8 +1152,8 @@ export default function NayefDashboard() {
               <ResponsiveContainer width="100%" height={240}>
                 <LineChart data={engagementTrend}>
                   <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid}/>
-                  <XAxis dataKey="month" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }}/>
-                  <YAxis tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}%`}/>
+                     <XAxis dataKey="month" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                     <YAxis tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}%`} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                   <Tooltip content={<ArabicTooltip/>}/>
                   <Legend wrapperStyle={{ fontFamily:"IBM Plex Sans Arabic", fontSize:12, color:T.textSub }}/>
                   <ReferenceLine y={4} stroke={`${T.red}60`} strokeDasharray="4 4"
@@ -1224,8 +1224,8 @@ export default function NayefDashboard() {
               <ResponsiveContainer width="100%" height={200}>
                 <BarChart data={hashtagPerf} layout="vertical" barSize={22}>
                   <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid} horizontal={false}/>
-                  <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${(v/1000).toFixed(0)}M`}/>
-                  <YAxis type="category" dataKey="tag" tick={{ fill:T.textSub, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }} width={130}/>
+                   <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${(v/1000).toFixed(0)}M`} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                   <YAxis type="category" dataKey="tag" tick={{ fill:T.textSub, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }} width={130} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                   <Tooltip content={<ArabicTooltip/>}/>
                   <Bar dataKey="مشاهدات_K" name="المشاهدات (K)" radius={[0,7,7,0]}>
                     {hashtagPerf.map((_,i)=>(
@@ -1294,8 +1294,8 @@ export default function NayefDashboard() {
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid}/>
-                  <XAxis dataKey="month" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }}/>
-                  <YAxis tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`$${(v/1000).toFixed(0)}K`}/>
+                   <XAxis dataKey="month" tick={{ fill:T.textMuted, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                   <YAxis tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`$${(v/1000).toFixed(0)}K`} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                   <Tooltip content={<ArabicTooltip/>}/>
                   <Legend wrapperStyle={{ fontFamily:"IBM Plex Sans Arabic", fontSize:12, color:T.textSub }}/>
                   <Bar dataKey="adsense" name="AdSense" fill={T.gold} radius={[4,4,0,0]} fillOpacity={0.85}/>
@@ -1356,8 +1356,8 @@ export default function NayefDashboard() {
                 <ResponsiveContainer width="100%" height={210}>
                   <BarChart data={competitorMetrics} layout="vertical" barSize={26}>
                     <CartesianGrid strokeDasharray="3 3" stroke={T.chartGrid} horizontal={false}/>
-                    <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}K`}/>
-                    <YAxis type="category" dataKey="name" tick={{ fill:T.textSub, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }} width={90}/>
+                     <XAxis type="number" tick={{ fill:T.textMuted, fontSize:10 }} tickFormatter={v=>`${v}K`} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
+                     <YAxis type="category" dataKey="name" tick={{ fill:T.textSub, fontSize:11, fontFamily:"IBM Plex Sans Arabic" }} width={90} axisLine={{ stroke: T.border }} tickLine={{ stroke: T.border }}/>
                     <Tooltip content={<ArabicTooltip/>}/>
                     <Bar dataKey="مشتركون" name="المشتركون (K)" radius={[0,7,7,0]}>
                       {competitorMetrics.map((c,i)=>(
