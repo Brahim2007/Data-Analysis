@@ -140,35 +140,35 @@ const APIFY_FIELDS = [
   {field:"user.verified",                        ex:"false"},
 ];
 const RECS = [
-  {priority:"عالية جداً",icon:"🎥",color:"#1D9BF0",title:"تحويل المنشورات النصية إلى مرئية",impact:"+40% مشاهدات | ROI: +380%",
+  {priority:"عالية جداً",icon:"🎥",color:"#1D9BF0",title:"تحويل المنشورات النصية إلى مرئية",impact:"+40% مشاهدات | عائد الاستثمار (ROI): +380%",
    detail:"تحليل 50 منشور: 0% منها يحتوي وسائط بصرية. المنشورات المرئية تحقق 40% مشاهدات إضافية في المتوسط.",
    how:"أفضل 3 منشورات نصية (635, 580, 520 مشاهدة) يمكن تحويلها إلى إنفوجرافيكس: 1) 'خريطة التمدد الإيراني' 2) 'خط زمني للفتن الآخرية' 3) 'مقارنة أداء المحتوى المختلط vs النقي'.",
    steps:["إنشاء 5 إنفوجرافيكس أسبوعياً بـ Canva Pro (20$/شهر)","إضافة صورة مصغرة جذابة لكل منشور","استخدام ألوان X الزرقاء مع خطوط عربية واضحة"],
    roi:"استثمار: 20$/شهر | عائد: +2,000 مشاهدة/منشور → +40,000 مشاهدة/شهر ≈ قيمة 120$ | صافي: +100$/شهر"},
-  {priority:"عالية جداً",icon:"🧵",color:"#1D9BF0",title:"تحويل المنشورات الفردية إلى Threads تحليلية",impact:"+260% مشاهدات | ROI: +620%",
-   detail:"منشورك الأعلى أداءً (635 مشاهدة عن 'نار المجوس') كان يمكن أن يصبح Thread من 7 تغريدات يصل إلى 2,000+ مشاهدة.",
-   how:"تحليل 50 منشور يُظهر أن المنشورات الطويلة (120-160 حرف) تحقق 520+ مشاهدة vs القصيرة 221 مشاهدة. Threads تزيد التفاعل 3×.",
-   steps:["تحويل 2 منشور أسبوعياً إلى Threads (الخميس والجمعة 8م)","هيكلة Thread: 1) مقدمة جذابة 2) 3-5 نقاط تحليلية 3) خاتمة مع دعوة للتفاعل","استخدام التنسيق: 🧵 للبداية، 🔗 للروابط، 📊 للإحصائيات"],
-   roi:"استثمار: 2 ساعة/أسبوع | عائد: +1,200 مشاهدة/Thread → +9,600 مشاهدة/شهر ≈ قيمة 29$ | صافي: +29$/أسبوع"},
-  {priority:"عالية",icon:"⏰",color:"#8B5CF6",title:"التحول إلى النشر الاستراتيجي 8-10م",impact:"+28% وصول | ROI: +280%",
+  {priority:"عالية جداً",icon:"🧵",color:"#1D9BF0",title:"تحويل المنشورات الفردية إلى خيوط تحليلية (Threads)",impact:"+260% مشاهدات | عائد الاستثمار (ROI): +620%",
+   detail:"منشورك الأعلى أداءً (635 مشاهدة عن 'نار المجوس') كان يمكن أن يصبح خيطاً تحليلياً (Thread) من 7 تغريدات يصل إلى 2,000+ مشاهدة.",
+   how:"تحليل 50 منشور يُظهر أن المنشورات الطويلة (120-160 حرف) تحقق 520+ مشاهدة vs القصيرة 221 مشاهدة. الخيوط (Threads) تزيد التفاعل 3×.",
+   steps:["تحويل 2 منشور أسبوعياً إلى خيوط (Threads) (الخميس والجمعة 8م)","هيكلة الخيط (Thread): 1) مقدمة جذابة 2) 3-5 نقاط تحليلية 3) خاتمة مع دعوة للتفاعل","استخدام التنسيق: 🧵 للبداية، 🔗 للروابط، 📊 للإحصائيات"],
+   roi:"استثمار: 2 ساعة/أسبوع | عائد: +1,200 مشاهدة/خيط (Thread) → +9,600 مشاهدة/شهر ≈ قيمة 29$ | صافي: +29$/أسبوع"},
+  {priority:"عالية",icon:"⏰",color:"#8B5CF6",title:"التحول إلى النشر الاستراتيجي 8-10م",impact:"+28% وصول | عائد الاستثمار (ROI): +280%",
    detail:"تحليل توقيت 50 منشور: 60% نشرت في أوقات غير مثلى (الصباح الباكر). المنشورات المسائية 8-10م تحقق 28% مشاهدات إضافية.",
    how:"أفضل منشور مسائي (720 مشاهدة الساعة 9م) vs متوسط 334 مشاهدة. تحليل حرارة النشر يُظهر ذروة الخليج 8-10م الأربعاء-الخميس.",
    steps:["جدولة 3-4 منشورات أسبوعياً الأربعاء والخميس 8-10م باستخدام Buffer (15$/شهر)","إضافة 30 دقيقة تفاعل بعد النشر للرد على التعليقات","اختبار الجمعة 9م للمحتوى الديني البحت"],
    roi:"استثمار: 15$/شهر + 3 ساعات/أسبوع | عائد: +28% مشاهدات → +5,600 مشاهدة/شهر ≈ قيمة 17$ | صافي: +2$/شهر + نمو عضوي"},
-  {priority:"عالية",icon:"💬",color:"#10B981",title:"تحويل التصريحات إلى أسئلة تفاعلية",impact:"+5× تعليقات | ROI: +450%",
+  {priority:"عالية",icon:"💬",color:"#10B981",title:"تحويل التصريحات إلى أسئلة تفاعلية",impact:"+5× تعليقات | عائد الاستثمار (ROI): +450%",
    detail:"من 50 منشور: 2 فقط يحتويان سؤالاً (4%). المنشورات الاستفهامية تحقق 5× تعليقات أكثر (0.1 → 0.5 تعليق/منشور).",
    how:"تحويل منشور مثل 'التمدد الإيراني يهدد الكويت' إلى 'هل تعتقد أن التمدد الإيراني يهدد الكويت؟ 🗳️ لماذا؟' يرفع التفاعل 380%.",
-   steps:["تحويل 30% من المنشورات إلى صيغة استفهامية (3/10 منشورات)","إضافة استطلاع أسبوعي باستخدام ميزة X Polls","الرد على كل تعليق خلال 60 دقيقة لبناء مجتمع"],
+   steps:["تحويل 30% من المنشورات إلى صيغة استفهامية (3/10 منشورات)","إضافة استطلاع أسبوعي باستخدام ميزة استطلاعات إكس (X Polls)","الرد على كل تعليق خلال 60 دقيقة لبناء مجتمع"],
    roi:"استثمار: 1 ساعة/يوم للتفاعل | عائد: +5× تعليقات → +250 تفاعل/شهر ≈ قيمة 75$ (بناء مجتمع) | صافي: +75$/شهر"},
-  {priority:"متوسطة",icon:"#️⃣",color:"#F59E0B",title:"توسيع الهاشتاقات من المحلية إلى الدولية",impact:"+35% وصول | ROI: +320%",
+  {priority:"متوسطة",icon:"#️⃣",color:"#F59E0B",title:"توسيع الهاشتاقات من المحلية إلى الدولية",impact:"+35% وصول | عائد الاستثمار (ROI): +320%",
    detail:"تحليل 50 منشور: 36% #إيران (محلي مكثف). إضافة #الشرق_الأوسط يفتح 28M مستخدم، #الإسلام يفتح 42M مستخدم.",
    how:"مقارنة أداء الهاشتاقات: #إيران (36%) يعطي تفاعل عالي لكن جمهور محدود. #Islam (دولي) يضاعف الوصول 3× مع حفاظ على الجودة.",
    steps:["إضافة 3 هاشتاقات لكل منشور: 1) محلي (#الكويت) 2) إقليمي (#الشرق_الأوسط) 3) دولي (#Islam)","مراقبة ترندات X اليومية والانضمام للنقاشات المبكرة","استخدام هاشتاقات القضايا (#Gaza #Palestine) للوصول العالمي"],
    roi:"استثمار: 30 دقيقة/يوم للبحث | عائد: +35% وصول → +7,000 مشاهدة/شهر ≈ قيمة 21$ | صافي: +21$/شهر"},
-  {priority:"متوسطة",icon:"🤝",color:"#EC4899",title:"بناء شبكة تعاون مع 5 حسابات تحليلية",impact:"+50% متابعون | ROI: +580%",
+  {priority:"متوسطة",icon:"🤝",color:"#EC4899",title:"بناء شبكة تعاون مع 5 حسابات تحليلية",impact:"+50% متابعون | عائد الاستثمار (ROI): +580%",
    detail:"مقارنة تنافسية تُظهر أن الحسابات المتعاونة تنمو 50% أسرع. التعاون مع @PoliticalGulf (45K) يعرضك لـ 45K مستخدم جديد.",
    how:"تحليل 3 حسابات مشابهة: @AnalystArabia (28K, ER 1.4%) ينمو 200 متابع/شهر عبر التعاونات. يمكن تحقيق 400 متابع/شهر.",
-   steps:["التعاون مع 3 حسابات أسبوعياً: 1) retweet متبادل 2) مشاركة في Thread 3) ذكر في منشور","انضمام إلى 2 Space أسبوعي عن الشرق الأوسط","إرسال 5 رسائل مباشرة/أسبوع لترتيب تعاونات"],
+   steps:["التعاون مع 3 حسابات أسبوعياً: 1) إعادة تغريد (Retweet) متبادلة 2) مشاركة في خيط (Thread) 3) ذكر في منشور","انضمام إلى 2 مساحة صوتية (Space) أسبوعياً عن الشرق الأوسط","إرسال 5 رسائل مباشرة/أسبوع لترتيب تعاونات"],
    roi:"استثمار: 3 ساعات/أسبوع | عائد: +50% نمو → +200 متابع/شهر ≈ قيمة 60$ (0.3$/متابع) | صافي: +60$/شهر"},
 ];
 
@@ -306,7 +306,7 @@ const WEEKLY_PERFORMANCE = [
 /* توصيات التوقيت الدقيقة */
 const TIMING_RECOMMENDATIONS = [
   {priority:"عالية جداً", time:"الجمعة 8-10م", impact:"+78% مشاهدات", reason:"ذروة الجمهور الخليجي للمحتوى الديني-السياسي", action:"نشر أهم محتوى أسبوعي"},
-  {priority:"عالية", time:"الخميس 6-8م", impact:"+52% تفاعل", reason:"وقت تحضير الجمهور للمناقشات السياسية", action:"نشر Threads تحليلية"},
+  {priority:"عالية", time:"الخميس 6-8م", impact:"+52% تفاعل", reason:"وقت تحضير الجمهور للمناقشات السياسية", action:"نشر خيوط تحليلية (Threads)"},
   {priority:"متوسطة", time:"الأربعاء 4-6م", impact:"+35% مشاركة", reason:"وقت تصفح العملاء بعد الدوام", action:"نشر محتوى إصلاحي اجتماعي"},
   {priority:"منخفضة", time:"الثلاثاء 2-4م", impact:"+12% تفاعل", reason:"أقل الأوقات تفاعلاً في الخليج", action:"تجنب النشر أو نشر محتوى ثانوي"},
 ];
@@ -354,7 +354,7 @@ const COMPETITOR_SWOT = [
     "سوق المحتوى الديني-السياسي الخليجي ينمو 15% سنوياً",
     "فرصة التعاون مع @PoliticalGulf و@IslamicThinker",
     "إمكانية رفع ER إلى 1.5%+ بالتوصيات البسيطة",
-    "الانتقال إلى Threads ووسائط مرئية (سوق غير مشبع)"
+    "الانتقال إلى الخيوط (Threads) ووسائط مرئية (سوق غير مشبع)"
   ]},
   {category:"التهديدات", items:[
     "منافسة من حسابات أكبر وأكثر تنظيماً (@IslamicThinker)",
@@ -374,14 +374,14 @@ const COMPETITIVE_PLAN_90_DAYS = [
   ], target:"ER 1.0%+"},
   {phase:"الأسبوع 5-8", focus:"تحسين التفاعل", actions:[
     "إضافة أسئلة تفاعلية إلى 50% من المنشورات",
-    "بدء Thread أسبوعي تحليلي",
+    "بدء خيط تحليلي (Thread) أسبوعي",
     "الرد على التعليقات خلال 30 دقيقة",
-    "استخدام استطلاعات X Polls"
+    "استخدام استطلاعات إكس (X Polls)"
   ], target:"ER 1.3%+"},
   {phase:"الأسبوع 9-12", focus:"التوسع التنافسي", actions:[
     "التعاون مع حسابين مشابهين",
     "توسيع الهاشتاقات الدولية (#Islam #MiddleEast)",
-    "انضمام إلى Spaces أسبوعية",
+    "انضمام إلى مساحات صوتية (Spaces) أسبوعية",
     "تحليل أداء المنافسين أسبوعياً"
   ], target:"ER 1.5%+, متابعين +500"},
 ];
@@ -480,8 +480,19 @@ const ApifyIcon = () => (
 
 /* ══════════ SUB-COMPONENTS (outside main — fixes hooks) ══════════ */
 
-function Badge({ real }) {
-  return null;
+function Badge({ real, T }) {
+  return (
+    <span style={{
+      background: real ? T.realBg : T.estBg,
+      border: `1px solid ${real ? T.realBorder : T.estBorder}`,
+      borderRadius: 20, padding: "2px 9px", fontSize: 10.5,
+      color: real ? "#059669" : "#92400E",
+      fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+      fontWeight: 600, display: "inline-flex", alignItems: "center", gap: 3,
+    }}>
+      {real ? "✓ بيانات فعلية" : "~ تقدير"}
+    </span>
+  );
 }
 
 function ATooltip({ active, payload, label, T }) {
@@ -513,7 +524,7 @@ function IBox({ type = "info", title, children, formula, real, T }) {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
           <p style={{ color: s.c, fontSize: 12.5, fontFamily: "'IBM Plex Sans Arabic',sans-serif", fontWeight: 700 }}>{s.ic} {title}</p>
-          {real !== undefined && <Badge real={real} />}
+          {real !== undefined && <Badge real={real} T={T} />}
         </div>
         {formula && (
           <button onClick={() => setShow(v => !v)} style={{
@@ -542,7 +553,7 @@ function Card({ title, subtitle, children, accent, badge, T }) {
         <div style={{ marginBottom: 14, direction: "rtl" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", marginBottom: 3 }}>
             <h3 style={{ color: T.text, fontSize: 14.5, fontFamily: "'IBM Plex Sans Arabic',sans-serif", fontWeight: 700, margin: 0 }}>{title}</h3>
-            {badge && <Badge real={badge === "real"} />}
+            {badge && <Badge real={badge === "real"} T={T} />}
           </div>
           {subtitle && <p style={{ color: T.textMuted, fontSize: 11.5, fontFamily: "'IBM Plex Sans Arabic',sans-serif" }}>{subtitle}</p>}
         </div>
@@ -564,7 +575,7 @@ function RealDataTab({ T }) {
           <h2 style={{ color: T.green, fontFamily: "'IBM Plex Sans Arabic',sans-serif", fontSize: 16, fontWeight: 700 }}>
             📡 بيانات فعلية — Apify X Scraper · مارس 2026
           </h2>
-          <Badge real={true} />
+          <Badge real={true} T={T} />
         </div>
         <p style={{ color: T.textSub, fontSize: 13, lineHeight: 1.9, fontFamily: "'IBM Plex Sans Arabic',sans-serif" }}>
            هذه البيانات مُستخرجة مباشرةً من <strong style={{ color: T.green }}>Apify Actor</strong> لحساب{" "}
@@ -585,7 +596,7 @@ function RealDataTab({ T }) {
           <div key={i} style={{ background: T.bg2, border: `1px solid ${T.border}`, borderLeft: `3px solid ${k.c}`,
             borderRadius: 12, padding: "13px 15px", direction: "rtl", boxShadow: T.shadow }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
-              <Badge real={k.real} /><span style={{ fontSize: 22 }}>{k.ic}</span>
+              <Badge real={k.real} T={T} /><span style={{ fontSize: 22 }}>{k.ic}</span>
             </div>
             <p style={{ color: T.textMuted, fontSize: 11, fontFamily: "'IBM Plex Sans Arabic',sans-serif", margin: "4px 0 3px" }}>{k.label}</p>
             <p style={{ color: k.c, fontSize: 22, fontWeight: 700, fontFamily: "'IBM Plex Sans Arabic',sans-serif", margin: "0 0 3px" }}>{k.val}</p>
@@ -739,7 +750,7 @@ function OverviewTab({ T }) {
           <div key={i} style={{ background: T.bg2, border: `1px solid ${T.border}`, borderLeft: `3px solid ${k.c}`,
             borderRadius: 12, padding: "13px 15px", direction: "rtl", boxShadow: T.shadow }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 5 }}>
-              <Badge real={k.real} /><span style={{ fontSize: 24 }}>{k.ic}</span>
+              <Badge real={k.real} T={T} /><span style={{ fontSize: 24 }}>{k.ic}</span>
             </div>
             <p style={{ color: T.textMuted, fontSize: 11, fontFamily: "'IBM Plex Sans Arabic',sans-serif", margin: "3px 0" }}>{k.label}</p>
             <p style={{ color: k.c, fontSize: 22, fontWeight: 700, fontFamily: "'IBM Plex Sans Arabic',sans-serif", margin: "0 0 3px" }}>{k.val}</p>
@@ -1025,7 +1036,7 @@ function SmartInsightsTab({ T }) {
       icon: "📏"
     },
     { 
-      insight: "الهاشتاق #إيران يعطي مشاهدات عالية لكن يقلل الـ Follow rate",
+      insight: "الهاشتاق #إيران يعطي مشاهدات عالية لكن يقلل معدل المتابعة (Follow rate)",
       evidence: "#إيران في 36% من المنشورات، لكن ER% 0.85 فقط",
       impact: "مشاهدات عالية، تفاعل منخفض",
       action: "إضافة #الشرق_الأوسط و#الإسلام بجانب #إيران",
@@ -1075,7 +1086,7 @@ function SmartInsightsTab({ T }) {
                 <div style={{ display: "flex", alignItems: "center", gap: 9, marginBottom: 9, flexWrap: "wrap" }}>
                   <span style={{ fontSize: 22 }}>{insight.icon}</span>
                   <h3 style={{ color: T.text, fontSize: 15, fontFamily: "'IBM Plex Sans Arabic',sans-serif", fontWeight: 700 }}>{insight.insight}</h3>
-                  <Badge real={true} />
+                  <Badge real={true} T={T} />
                 </div>
                 <div style={{ background: insight.color + "10", border: `1px solid ${insight.color}25`,
                   borderRadius: 9, padding: "10px 13px", marginBottom: 11 }}>
@@ -1290,7 +1301,7 @@ function BenchmarkTab({ T }) {
       </Card>
 
       {/* SWOT Analysis */}
-      <Card title="🧠 تحليل SWOT التنافسي" accent={T.purple} T={T}>
+      <Card title="🧠 تحليل نقاط القوة والضعف (SWOT) التنافسي" accent={T.purple} T={T}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 14 }}>
           <div style={{ background: "#F0FDF4", border: `1px solid ${T.green}40`, borderRadius: 10, padding: "12px 14px" }}>
             <p style={{ color: T.green, fontSize: 12, fontFamily: "IBM Plex Sans Arabic", fontWeight: 700, marginBottom: 8 }}>نقاط القوة (Strengths)</p>
@@ -1316,7 +1327,7 @@ function BenchmarkTab({ T }) {
               <li>سوق المحتوى الديني–السياسي الخليجي ينمو</li>
               <li>فرصة التعاون مع حسابات مشابهة</li>
               <li>إمكانية رفع ER إلى 3%+ بالتوصيات البسيطة</li>
-              <li>الانتقال إلى Threads ووسائط مرئية</li>
+              <li>الانتقال إلى الخيوط (Threads) ووسائط مرئية</li>
             </ul>
           </div>
           <div style={{ background: "#FEE2E2", border: `1px solid ${T.red}40`, borderRadius: 10, padding: "12px 14px" }}>
@@ -1346,7 +1357,7 @@ function BenchmarkTab({ T }) {
             <ul style={{ color: T.textSub, fontSize: 10.5, fontFamily: "IBM Plex Sans Arabic", paddingRight: 12, margin: 0 }}>
               <li>إضافة صورة/إنفوجرافيك لكل منشور</li>
               <li>رفع ER إلى 1.2%</li>
-              <li>بدء Thread أسبوعي</li>
+              <li>بدء خيط تحليلي (Thread) أسبوعي</li>
             </ul>
           </div>
           <div style={{ background: T.bg3, borderRadius: 10, padding: "12px 14px" }}>
@@ -1364,7 +1375,7 @@ function BenchmarkTab({ T }) {
             <ul style={{ color: T.textSub, fontSize: 10.5, fontFamily: "IBM Plex Sans Arabic", paddingRight: 12, margin: 0 }}>
               <li>تصدر ER بين الحسابات المشابهة</li>
               <li>زيادة المتابعين 50%</li>
-              <li>إطلاق Live Q&A شهري</li>
+              <li>إطلاق جلسة أسئلة مباشرة (Live Q&A) شهري</li>
             </ul>
           </div>
         </div>
@@ -1434,11 +1445,11 @@ function ForecastTab({ T }) {
 
   /* خطة تنفيذ شهرية مع مؤشرات أداء */
   const MONTHLY_PLAN = [
-    {month:"الشهر 1", focus:"التحسين البصري والهيكلي", tasks:["إنشاء 5 إنفوجرافيكس أسبوعياً","إضافة صور لكل منشور","بدء Threads أسبوعية"], budget:50, kpis:["ER 1.2%+","+40% مشاهدات","+500 متابع"], risk:"منخفض", color:T.green},
+    {month:"الشهر 1", focus:"التحسين البصري والهيكلي", tasks:["إنشاء 5 إنفوجرافيكس أسبوعياً","إضافة صور لكل منشور","بدء خيوط تحليلية (Threads) أسبوعية"], budget:50, kpis:["ER 1.2%+","+40% مشاهدات","+500 متابع"], risk:"منخفض", color:T.green},
     {month:"الشهر 2", focus:"تحسين التوقيت والتفاعل", tasks:["جدولة النشر 8-10م","إضافة 3 هاشتاقات دولية","تفاعل مع 10 حسابات يومياً"], budget:30, kpis:["ER 1.5%+","+28% وصول","+800 متابع"], risk:"منخفض", color:T.xBlue},
     {month:"الشهر 3", focus:"التعاون والتوسع الجغرافي", tasks:["3 تعاونات مع حسابات مشابهة","انضمام لنقاشات ترند","إطلاق حملة أسبوعية"], budget:70, kpis:["ER 1.8%+","+50% متابعين","+1200 متابع"], risk:"متوسط", color:T.purple},
     {month:"الشهر 4", focus:"التحليل والتكرار والتحسين", tasks:["تحليل أداء الشهور السابقة","تكرار النماذج الناجحة","توسيع الجمهور الدولي"], budget:40, kpis:["ER 2.0%+","+35% تفاعل","+1500 متابع"], risk:"منخفض", color:T.amber},
-    {month:"الشهر 5", focus:"التميز والريادة في النيش", tasks:["تصدر النقاشات الدينية-السياسية","إطلاق Live Q&A شهري","بناء مجتمع تفاعلي"], budget:60, kpis:["ER 2.3%+","+60% نمو","+2000 متابع"], risk:"متوسط", color:T.red},
+    {month:"الشهر 5", focus:"التميز والريادة في النيش", tasks:["تصدر النقاشات الدينية-السياسية","إطلاق جلسة أسئلة مباشرة (Live Q&A) شهري","بناء مجتمع تفاعلي"], budget:60, kpis:["ER 2.3%+","+60% نمو","+2000 متابع"], risk:"متوسط", color:T.red},
     {month:"الشهر 6", focus:"التوسع والتحول إلى مرجعية", tasks:["التحول إلى حساب مرجعي","إطلاق بودكاست شهري","التعاون مع وسائل إعلام"], budget:80, kpis:["ER 2.5%+","+100% نمو","+3000 متابع"], risk:"مرتفع", color:T.teal},
   ];
 
@@ -1473,7 +1484,7 @@ function ForecastTab({ T }) {
               التنبؤ المستقبلي والعائد على الاستثمار (ROI)
             </h2>
             <p style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif", fontSize: 13, margin: "4px 0 0 0" }}>
-              نموذج ARIMA للتنبؤ بعدد المتابعين والمشاهدات خلال 6 أشهر مع خطة تنفيذية شهرية وتقدير ROI
+              نموذج ARIMA للتنبؤ بعدد المتابعين والمشاهدات خلال 6 أشهر مع خطة تنفيذية شهرية وتقدير عائد الاستثمار (ROI)
             </p>
           </div>
         </div>
@@ -1551,7 +1562,7 @@ function ForecastTab({ T }) {
             ))}
           </div>
           <div style={{ marginTop: 16, fontSize: 12, color: T.textSub, lineHeight: 1.6 }}>
-            <strong style={{ color: T.text }}>حساب ROI:</strong> (القيمة المقدرة - الاستثمار) ÷ الاستثمار × 100.
+            <strong style={{ color: T.text }}>حساب عائد الاستثمار (ROI):</strong> (القيمة المقدرة - الاستثمار) ÷ الاستثمار × 100.
             <strong style={{ color: T.green }}> الاستثمار الأمثل: 150$</strong> يعطي أعلى عائد نسبي (+620%).
           </div>
         </div>
@@ -1595,7 +1606,7 @@ function ForecastTab({ T }) {
         <div style={{ marginTop: 20, padding: 16, background: T.bg3, borderRadius: 10, fontSize: 13, color: T.textSub, lineHeight: 1.7 }}>
           <strong style={{ color: T.text }}>ملخص الخطة:</strong> إجمالي الاستثمار <strong style={{ color: T.text }}>190$</strong> على 4 أشهر،
           مع توقع كسب <strong style={{ color: T.green }}>+4,000 متابع</strong> و <strong style={{ color: T.xBlue }}>+28,000 مشاهدة إضافية</strong>،
-          مما يعطي عائداً مقدراً بقيمة <strong style={{ color: T.purple }}>1,200$</strong> (ROI: +530%).
+          مما يعطي عائداً مقدراً بقيمة <strong style={{ color: T.purple }}>1,200$</strong> (عائد الاستثمار (ROI): +530%).
         </div>
       </div>
 
@@ -1637,7 +1648,7 @@ function RecsTab({ T }) {
           <h2 style={{ color: T.green, fontFamily: "'IBM Plex Sans Arabic',sans-serif", fontSize: 16, fontWeight: 700 }}>
             🎯 التوصيات الاستراتيجية المبنية على البيانات
           </h2>
-          <Badge real={true} />
+          <Badge real={true} T={T} />
         </div>
         <p style={{ color: T.textSub, fontSize: 13.5, lineHeight: 2, fontFamily: "'IBM Plex Sans Arabic',sans-serif" }}>
            بعد تحليل <strong style={{ color: T.green }}>50 منشورات فعلية</strong>: الحساب يمتلك محتوى أصيلاً.
@@ -1659,7 +1670,7 @@ function RecsTab({ T }) {
                   padding: "2px 10px", color: r.color, fontSize: 10.5, fontFamily: "'IBM Plex Sans Arabic',sans-serif", fontWeight: 600 }}>
                   أولوية {r.priority}
                 </span>
-                <Badge real={true} />
+                <Badge real={true} T={T} />
               </div>
               <p style={{ color: T.textSub, fontSize: 13.5, lineHeight: 1.85, fontFamily: "'IBM Plex Sans Arabic',sans-serif", marginBottom: 11 }}>{r.detail}</p>
               <div style={{ background: "#F5F3FF", border: "1px solid #DDD6FE", borderRadius: 9, padding: "10px 13px", marginBottom: 11 }}>
@@ -1687,9 +1698,9 @@ function RecsTab({ T }) {
               </div>
               <div style={{ background: T.green + "10", border: `1px solid ${T.green}35`, borderRadius: 11,
                 padding: "12px 15px", textAlign: "center", minWidth: 88, flexShrink: 0 }}>
-                <p style={{ color: T.textMuted, fontSize: 10, fontFamily: "'IBM Plex Sans Arabic',sans-serif", marginBottom: 4 }}>ROI</p>
+                <p style={{ color: T.textMuted, fontSize: 10, fontFamily: "'IBM Plex Sans Arabic',sans-serif", marginBottom: 4 }}>عائد الاستثمار (ROI)</p>
                 <p style={{ color: T.green, fontSize: 15, fontWeight: 700, fontFamily: "'IBM Plex Sans Arabic',sans-serif", whiteSpace: "nowrap" }}>
-                  {r.impact.includes("ROI:") ? r.impact.split("ROI:")[1].trim() : r.impact.includes("+") ? r.impact.split("|")[1]?.trim() || "+380%" : "+380%"}
+                  {r.impact.includes("عائد الاستثمار (ROI):") ? r.impact.split("عائد الاستثمار (ROI):")[1].trim() : r.impact.includes("+") ? r.impact.split("|")[1]?.trim() || "+380%" : "+380%"}
                 </p>
               </div>
             </div>
@@ -1715,7 +1726,7 @@ function RecsTab({ T }) {
             <ul style={{ color: T.textSub, fontSize: 13, fontFamily: "'IBM Plex Sans Arabic',sans-serif", paddingRight: 15, margin: 0, lineHeight: 1.9 }}>
               <li>القيمة المقدرة للمشاهدة: 0.003$</li>
               <li>القيمة المقدرة للمتابع: 0.30$</li>
-              <li>ROI المستهدف: +500%</li>
+              <li>عائد الاستثمار (ROI) المستهدف: +500%</li>
               <li>العائد الشهري المستهدف: 120$</li>
               <li>فترة استرداد الاستثمار: 45 يوم</li>
             </ul>
@@ -1723,7 +1734,7 @@ function RecsTab({ T }) {
         </div>
         <IBox type="info" title="كيفية قياس مؤشرات الأداء" real={true} T={T}>
           <strong style={{ color: T.xBlue }}>الأسبوعي:</strong> تحليل ER% ومتوسط المشاهدات.<br/>
-          <strong style={{ color: T.green }}>الشهري:</strong> حساب النمو وROI.<br/>
+          <strong style={{ color: T.green }}>الشهري:</strong> حساب النمو وعائد الاستثمار (ROI).<br/>
           <strong style={{ color: T.purple }}>الربع سنوي:</strong> مقارنة مع المنافسين وتعديل الاستراتيجية.
         </IBox>
       </Card>
@@ -1755,7 +1766,7 @@ function RecsTab({ T }) {
         <IBox type="success" title="كيفية المراقبة" real={true} T={T}>
           <strong style={{ color: T.xBlue }}>يومياً:</strong> مراجعة الإحصائيات الأساسية.<br/>
           <strong style={{ color: T.green }}>أسبوعياً:</strong> تحليل ER% ومقارنة مع الأسبوع السابق.<br/>
-          <strong style={{ color: T.purple }}>شهرياً:</strong> حساب ROI وتقييم التقدم نحو الأهداف.
+          <strong style={{ color: T.purple }}>شهرياً:</strong> حساب عائد الاستثمار (ROI) وتقييم التقدم نحو الأهداف.
         </IBox>
       </Card>
 
@@ -1786,7 +1797,7 @@ function RecsTab({ T }) {
         <IBox type="success" title="العائد على الاستثمار (ROI) الإجمالي" real={true} T={T}>
           <strong style={{ color: T.green }}>إجمالي الاستثمار:</strong> 300-600$ على 6 أشهر<br/>
           <strong style={{ color: T.xBlue }}>القيمة المقدرة:</strong> 1,200-1,800$<br/>
-          <strong style={{ color: T.purple }}>صافي العائد:</strong> 900-1,200$ (+300-400% ROI)<br/>
+          <strong style={{ color: T.purple }}>صافي العائد:</strong> 900-1,200$ (+300-400% عائد الاستثمار (ROI))<br/>
           <strong style={{ color: T.amber }}>فترة استرداد الاستثمار:</strong> 3-4 أشهر
         </IBox>
       </Card>
@@ -2071,9 +2082,9 @@ function DeepAnalysisTab({ T }) {
           ))}
         </div>
         <IBox type="success" title="10K متابع قابل للتحقيق في 6 أشهر" real={false} T={T}
-          formula="السيناريو المثالي: نمو 15% شهرياً بتطبيق الوسائط + Threads + التفاعل المنتظم.">
+          formula="السيناريو المثالي: نمو 15% شهرياً بتطبيق الوسائط + الخيوط (Threads) + التفاعل المنتظم.">
           السيناريو المحسّن يتطلب فقط{" "}
-          <strong style={{ color: T.xBlue }}>3 تغييرات: صورة/إنفوجرافيك + Thread أسبوعي + استطلاع أسبوعي.</strong>{" "}
+          <strong style={{ color: T.xBlue }}>3 تغييرات: صورة/إنفوجرافيك + خيط تحليلي (Thread) أسبوعي + استطلاع أسبوعي.</strong>{" "}
           المثالي يضيف التعاون مع حسابات وتوسيع الهاشتاقات.
         </IBox>
       </Card>
@@ -2082,10 +2093,423 @@ function DeepAnalysisTab({ T }) {
   );
 }
 
+/* ══════════ SIMPLE SUMMARY TAB — للقارئ غير التقني ══════════ */
+function SimpleSummaryTab({ T }) {
+
+  const StepCard = ({ num, title, desc, color }) => (
+    <div style={{ display: "flex", gap: 14, alignItems: "flex-start", direction: "rtl" }}>
+      <div style={{ minWidth: 38, height: 38, borderRadius: "50%", background: color,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        color: "#FFF", fontWeight: 800, fontSize: 16, flexShrink: 0 }}>{num}</div>
+      <div>
+        <p style={{ color: T.text, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontWeight: 700, fontSize: 14, marginBottom: 4 }}>{title}</p>
+        <p style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 13, lineHeight: 1.85 }}>{desc}</p>
+      </div>
+    </div>
+  );
+
+  const InsightCard = ({ icon, title, value, meaning, color, bg }) => (
+    <div style={{ background: bg || T.bg3, border: `1px solid ${color}30`,
+      borderRight: `4px solid ${color}`, borderRadius: 12, padding: "16px 18px", direction: "rtl" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
+        <div>
+          <p style={{ color: T.textMuted, fontFamily: "'IBM Plex Sans Arabic',sans-serif", fontSize: 12, marginBottom: 4 }}>{icon} {title}</p>
+          <p style={{ color, fontFamily: "'IBM Plex Sans Arabic',sans-serif", fontSize: 26, fontWeight: 800 }}>{value}</p>
+        </div>
+      </div>
+      <p style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+        fontSize: 13, lineHeight: 1.8, borderTop: `1px solid ${T.border}`, paddingTop: 10, marginTop: 4 }}>
+        {meaning}
+      </p>
+    </div>
+  );
+
+  const WeekCard = ({ week, title, tasks, goal, color }) => (
+    <div style={{ background: T.bg2, border: `1px solid ${color}30`,
+      borderTop: `3px solid ${color}`, borderRadius: 12, padding: "16px 18px", direction: "rtl" }}>
+      <p style={{ color, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+        fontWeight: 800, fontSize: 13, marginBottom: 4 }}>{week}</p>
+      <p style={{ color: T.text, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+        fontWeight: 700, fontSize: 15, marginBottom: 10 }}>{title}</p>
+      <ul style={{ paddingRight: 18, margin: 0, marginBottom: 12 }}>
+        {tasks.map((t, i) => (
+          <li key={i} style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+            fontSize: 13, lineHeight: 2 }}>{t}</li>
+        ))}
+      </ul>
+      <div style={{ background: color + "15", border: `1px solid ${color}30`, borderRadius: 8,
+        padding: "8px 12px", display: "flex", alignItems: "center", gap: 6 }}>
+        <span style={{ fontSize: 14 }}>🎯</span>
+        <p style={{ color, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 12, fontWeight: 700 }}>{goal}</p>
+      </div>
+    </div>
+  );
+
+  return (
+    <div style={{ display: "grid", gap: 20 }}>
+
+      {/* ─── بانر ترحيبي ─── */}
+      <div style={{ background: "linear-gradient(135deg,#1D9BF0,#0D7CC9)", borderRadius: 16,
+        padding: "24px 28px", direction: "rtl" }}>
+        <h2 style={{ color: "#FFF", fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 20, fontWeight: 800, marginBottom: 10 }}>
+          👋 أهلاً عبدالرحمن — هذا ملخصك المبسط
+        </h2>
+        <p style={{ color: "#DBEAFE", fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 14, lineHeight: 1.9, marginBottom: 16 }}>
+          قمنا بتحليل <strong style={{ color: "#FFF" }}>50 منشوراً</strong> نشرتها خلال الأشهر الثلاثة الماضية (ديسمبر 2025 – مارس 2026).
+          هذه الصفحة تشرح لك ما وجدناه بلغة بسيطة — بدون مصطلحات تقنية معقدة — وتعطيك خطة عمل واضحة لتنمية حسابك.
+        </p>
+        <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+          {[
+            { label: "50 منشوراً محللاً", icon: "📋" },
+            { label: "3 أشهر من البيانات", icon: "📅" },
+            { label: "6 توصيات عملية", icon: "💡" },
+            { label: "خطة 4 أسابيع", icon: "🗓️" },
+          ].map((b, i) => (
+            <div key={i} style={{ background: "rgba(255,255,255,0.2)", borderRadius: 8,
+              padding: "6px 14px", display: "flex", alignItems: "center", gap: 6 }}>
+              <span style={{ fontSize: 14 }}>{b.icon}</span>
+              <span style={{ color: "#FFF", fontFamily: "IBM Plex Sans Arabic", fontSize: 12, fontWeight: 600 }}>{b.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ─── وضعك الحالي ─── */}
+      <div style={{ background: T.bg2, border: `1px solid ${T.border}`, borderRadius: 16,
+        padding: "20px 24px", direction: "rtl" }}>
+        <h3 style={{ color: T.text, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 17, fontWeight: 800, marginBottom: 6 }}>📍 أين أنت الآن؟</h3>
+        <p style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 13, marginBottom: 18, lineHeight: 1.8 }}>
+          تخيّل أن حسابك على X كمحل في سوق كبير — إليك مكانتك الحالية بكل وضوح:
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))", gap: 14 }}>
+          <InsightCard icon="👁️" title="المشاهدات"
+            value="334 مشاهدة"
+            meaning="في المتوسط، كل منشور تنشره يشاهده حوالي 334 شخصاً — أي مثل ملء قاعة صغيرة بالجمهور في كل مرة."
+            color={T.xBlue} />
+          <InsightCard icon="❤️" title="الإعجابات"
+            value="2.7 إعجاب"
+            meaning="من كل 100 شخص يرون منشورك، يضغط اثنان فقط على الإعجاب. هذا رقم منخفض ويمكن تحسينه بسهولة."
+            color={T.red} />
+          <InsightCard icon="👤" title="المتابعون"
+            value="3,000–5,000"
+            meaning="لديك جمهور محترم. عدد المتابعين هذا يعني أن لديك قاعدة مخلصة يمكن البناء عليها للوصول لـ 10,000."
+            color={T.teal} />
+          <InsightCard icon="📅" title="معدل النشر"
+            value="1–2 يومياً"
+            meaning="تنشر بانتظام — وهذا ممتاز! الاتساق في النشر من أهم عوامل النمو على X."
+            color={T.purple} />
+        </div>
+      </div>
+
+      {/* ─── ماذا يعمل جيداً؟ ─── */}
+      <div style={{ background: T.bg2, border: `1px solid ${T.border}`, borderRadius: 16,
+        padding: "20px 24px", direction: "rtl" }}>
+        <h3 style={{ color: T.green, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 17, fontWeight: 800, marginBottom: 6 }}>✅ ما الذي يعمل جيداً في حسابك؟</h3>
+        <p style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 13, marginBottom: 18, lineHeight: 1.8 }}>
+          هذه نقاط قوتك الحقيقية — حافظ عليها ولا تتخلى عنها أبداً:
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 14 }}>
+          {[
+            {
+              icon: "🎯",
+              title: "هويتك واضحة ومميزة",
+              desc: "حسابك يجمع الديني والسياسي بشكل فريد — 40% محتوى ديني + 40% سياسي. هذا المزيج نادر ويجذب جمهوراً متعطشاً لهذا النوع من المحتوى."
+            },
+            {
+              icon: "🔁",
+              title: "الناس يشاركون منشوراتك",
+              desc: "نسبة إعادة النشر (الريتويت) لديك أعلى من المعيار العام — يعني أن جمهورك يثق بما تقوله ويريد نشره لأصدقائه."
+            },
+            {
+              icon: "🕌",
+              title: "جمهورك خليجي مخلص",
+              desc: "38% من جمهورك من الكويت و24% من السعودية — جمهور قريب منك يفهم ما تقوله ويتفاعل معه. هذا كنز حقيقي."
+            },
+            {
+              icon: "📝",
+              title: "منشوراتك مفيدة وعميقة",
+              desc: "التغريدات التي تكتبها أطول من 120 حرف تحصل على مشاهدات أكثر بكثير — يعني جمهورك يحب المحتوى الجاد والعميق."
+            },
+          ].map((s, i) => (
+            <div key={i} style={{ background: "#F0FDF4", border: "1px solid #A7F3D0",
+              borderRadius: 12, padding: "16px 18px" }}>
+              <p style={{ fontSize: 24, marginBottom: 8 }}>{s.icon}</p>
+              <p style={{ color: "#065F46", fontFamily: "IBM Plex Sans Arabic",
+                fontWeight: 700, fontSize: 14, marginBottom: 6 }}>{s.title}</p>
+              <p style={{ color: "#047857", fontFamily: "IBM Plex Sans Arabic",
+                fontSize: 13, lineHeight: 1.8 }}>{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ─── ما يحتاج تحسين ─── */}
+      <div style={{ background: T.bg2, border: `1px solid ${T.border}`, borderRadius: 16,
+        padding: "20px 24px", direction: "rtl" }}>
+        <h3 style={{ color: T.amber, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 17, fontWeight: 800, marginBottom: 6 }}>⚠️ ما الذي يحتاج تحسيناً؟</h3>
+        <p style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 13, marginBottom: 18, lineHeight: 1.8 }}>
+          هذه الفجوات هي فرصك الذهبية للنمو — إصلاحها سيضاعف تأثيرك:
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 14 }}>
+          {[
+            {
+              icon: "🖼️",
+              title: "لا صور ولا فيديو إطلاقاً",
+              desc: "من 50 منشوراً، لا يوجد صورة واحدة! المنشورات التي تحتوي صورة تحصل على ضعف المشاهدات تقريباً. هذا أكبر فرصة لديك الآن.",
+              severity: "عاجل"
+            },
+            {
+              icon: "⏰",
+              title: "تنشر في أوقات الجمهور النائم",
+              desc: "60% من منشوراتك تُنشر صباحاً — لكن معظم جمهورك الخليجي يكون نشطاً مساءً بين 8-10م. النشر في الوقت الخطأ = ضياع المجهود.",
+              severity: "مهم"
+            },
+            {
+              icon: "💬",
+              title: "منشوراتك تُخبر ولا تسأل",
+              desc: "فقط 4% من منشوراتك تحتوي سؤالاً. المنشورات التي تحتوي سؤالاً تحصل على 5 أضعاف التعليقات. السؤال يدعو الناس للمشاركة.",
+              severity: "مهم"
+            },
+            {
+              icon: "#️⃣",
+              title: "هاشتاقاتك محلية جداً",
+              desc: "أكثر من ثلث منشوراتك تستخدم فقط #إيران. هذا يحدّ جمهورك. إضافة هاشتاقات أوسع مثل #الشرق_الأوسط يفتح لك ملايين من الجمهور الجديد.",
+              severity: "متوسط"
+            },
+          ].map((w, i) => (
+            <div key={i} style={{ background: "#FFFBEB", border: "1px solid #FDE68A",
+              borderRadius: 12, padding: "16px 18px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
+                <p style={{ fontSize: 24 }}>{w.icon}</p>
+                <span style={{
+                  background: w.severity === "عاجل" ? "#FEE2E2" : w.severity === "مهم" ? "#FEF3C7" : "#EFF6FF",
+                  color: w.severity === "عاجل" ? "#991B1B" : w.severity === "مهم" ? "#92400E" : "#1E40AF",
+                  border: `1px solid ${w.severity === "عاجل" ? "#FECACA" : w.severity === "مهم" ? "#FDE68A" : "#BFDBFE"}`,
+                  borderRadius: 20, padding: "2px 10px", fontSize: 11,
+                  fontFamily: "IBM Plex Sans Arabic", fontWeight: 700
+                }}>{w.severity}</span>
+              </div>
+              <p style={{ color: "#92400E", fontFamily: "IBM Plex Sans Arabic",
+                fontWeight: 700, fontSize: 14, marginBottom: 6 }}>{w.title}</p>
+              <p style={{ color: "#78350F", fontFamily: "IBM Plex Sans Arabic",
+                fontSize: 13, lineHeight: 1.8 }}>{w.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ─── شرح الأرقام بلغة بسيطة ─── */}
+      <div style={{ background: T.bg2, border: `1px solid ${T.border}`, borderRadius: 16,
+        padding: "20px 24px", direction: "rtl" }}>
+        <h3 style={{ color: T.xBlue, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 17, fontWeight: 800, marginBottom: 6 }}>🔢 ماذا تعني الأرقام؟ — شرح مبسط</h3>
+        <p style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 13, marginBottom: 18, lineHeight: 1.8 }}>
+          هنا نترجم لك كل رقم إلى معنى حقيقي في حياتك اليومية:
+        </p>
+        <div style={{ display: "grid", gap: 14 }}>
+          {[
+            {
+              metric: "معدل التفاعل (ER) = 0.85%",
+              icon: "💛",
+              plain: "من كل 100 شخص يرى منشورك، يتفاعل معه أقل من شخص واحد (إعجاب أو تعليق أو مشاركة).",
+              compare: "المعيار الجيد على X هو 2–3%. أنت عند 0.85% — يعني هناك فرصة كبيرة للتحسين.",
+              action: "إضافة صورة ومزج الديني بالسياسي يرفع هذا الرقم إلى 1.5% في شهر واحد فقط.",
+              color: T.amber
+            },
+            {
+              metric: "المشاهدات = 334 في المتوسط",
+              icon: "👁️",
+              plain: "عندما تنشر منشوراً، يظهر لـ 334 شخصاً في المتوسط — بعضهم يتوقف ويقرأ وبعضهم يمر مسرعاً.",
+              compare: "أفضل منشور حصل على 635 مشاهدة — وهو الذي جمع الدعاء الديني مع الموقف السياسي.",
+              action: "الصيغة الناجحة: دعاء + قضية إسلامية + صورة = ضعف المشاهدات.",
+              color: T.xBlue
+            },
+            {
+              metric: "المتابعون = 3,000 – 5,000",
+              icon: "👥",
+              plain: "لديك مجتمع حقيقي من الأشخاص المهتمين بما تقوله — هذا أفضل بكثير من حساب عنده مليون متابع وهمي.",
+              compare: "في 6 أشهر مع التوصيات البسيطة يمكن الوصول لـ 7,400 متابع. ومع الجهد الكامل: 10,000.",
+              action: "الوصول لـ 10K متابع يفتح لك أبواب التعاون مع مؤسسات وإعلاميين.",
+              color: T.teal
+            },
+            {
+              metric: "أفضل وقت للنشر = الجمعة 8–10م",
+              icon: "⏰",
+              plain: "في هذا الوقت تحديداً، يكون جمهورك الخليجي متصلاً وفي وضع الاسترخاء والقراءة — مثل وقت الشاي.",
+              compare: "المنشورات المسائية تحصل على مشاهدات أعلى بـ 73% من المنشورات الصباحية.",
+              action: "جرّب هذا الأسبوع: انشر نفس نوع المحتوى مساءً بدل الصباح وقارن النتيجة.",
+              color: T.purple
+            },
+          ].map((m, i) => (
+            <div key={i} style={{ background: T.bg3, border: `1px solid ${m.color}20`,
+              borderRight: `4px solid ${m.color}`, borderRadius: 12, padding: "16px 20px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 12 }}>
+                <span style={{ fontSize: 20 }}>{m.icon}</span>
+                <p style={{ color: m.color, fontFamily: "IBM Plex Sans Arabic",
+                  fontWeight: 800, fontSize: 14 }}>{m.metric}</p>
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 }}>
+                <div style={{ background: T.bg2, borderRadius: 8, padding: "10px 12px" }}>
+                  <p style={{ color: T.textMuted, fontFamily: "IBM Plex Sans Arabic",
+                    fontSize: 11, fontWeight: 700, marginBottom: 5 }}>📖 يعني بالبسيط</p>
+                  <p style={{ color: T.text, fontFamily: "IBM Plex Sans Arabic",
+                    fontSize: 12.5, lineHeight: 1.75 }}>{m.plain}</p>
+                </div>
+                <div style={{ background: T.bg2, borderRadius: 8, padding: "10px 12px" }}>
+                  <p style={{ color: T.textMuted, fontFamily: "IBM Plex Sans Arabic",
+                    fontSize: 11, fontWeight: 700, marginBottom: 5 }}>📊 مقارنة بالآخرين</p>
+                  <p style={{ color: T.text, fontFamily: "IBM Plex Sans Arabic",
+                    fontSize: 12.5, lineHeight: 1.75 }}>{m.compare}</p>
+                </div>
+                <div style={{ background: m.color + "10", border: `1px solid ${m.color}30`,
+                  borderRadius: 8, padding: "10px 12px" }}>
+                  <p style={{ color: m.color, fontFamily: "IBM Plex Sans Arabic",
+                    fontSize: 11, fontWeight: 700, marginBottom: 5 }}>🎯 ماذا تفعل؟</p>
+                  <p style={{ color: T.textSub, fontFamily: "IBM Plex Sans Arabic",
+                    fontSize: 12.5, lineHeight: 1.75 }}>{m.action}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ─── التوصيات بلغة بسيطة ─── */}
+      <div style={{ background: T.bg2, border: `1px solid ${T.border}`, borderRadius: 16,
+        padding: "20px 24px", direction: "rtl" }}>
+        <h3 style={{ color: T.text, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 17, fontWeight: 800, marginBottom: 6 }}>💡 توصياتنا لك — مرتبة من الأهم للأقل</h3>
+        <p style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 13, marginBottom: 20, lineHeight: 1.8 }}>
+          ست خطوات عملية يمكنك البدء بها هذا الأسبوع:
+        </p>
+        <div style={{ display: "grid", gap: 16 }}>
+          <StepCard num="1" title="أضف صورة أو إنفوجرافيك لكل منشور"
+            desc="هذه هي أكبر فرصة لديك الآن. خذ أي منشور نصي كتبته واصنع له صورة بسيطة عبر Canva (مجانية). المنشورات التي تحتوي صور تحصل على ضعف المشاهدات تقريباً. مثلاً: منشورك عن 'التمدد الإيراني' يمكن أن يصبح خريطة بسيطة مرئية."
+            color={T.xBlue} />
+          <StepCard num="2" title="غيّر وقت نشرك إلى مساء الخميس والجمعة 8–10م"
+            desc="هذا تغيير لا يكلفك شيئاً ولكن تأثيره كبير. جمهورك الخليجي يكون في ذروة نشاطه في هذا الوقت — مثلما تختار فتح دكانك في أوقات الذروة لا في أوقات الهدوء."
+            color={T.purple} />
+          <StepCard num="3" title="اجعل 3 من كل 10 منشورات أسئلة للجمهور"
+            desc="بدل أن تقول فقط 'التعاون الخليجي ضرورة'، اسأل: 'في رأيك، ما أكبر عائق أمام التعاون الخليجي؟' الناس يحبون أن يُسألوا رأيهم — وهذا يرفع التعليقات 5 أضعاف."
+            color={T.green} />
+          <StepCard num="4" title="حوّل منشوراتك الجيدة إلى سلسلة تغريدات (Thread)"
+            desc="منشورك الأفضل كان 635 مشاهدة. تخيل لو حولته إلى سلسلة من 6-7 تغريدات مع تفصيل أكثر — الدراسات تقول إن هذا يمكن أن يوصله لـ 2000+ مشاهدة. اختر منشورك الأسبوعي الأقوى واجعله سلسلة."
+            color={T.amber} />
+          <StepCard num="5" title="أضف هاشتاقات أوسع بجانب هاشتاقاتك المعتادة"
+            desc="أنت تستخدم #إيران كثيراً (جيد) لكن أضف معه دائماً: #الشرق_الأوسط أو #الإسلام. هذا يفتح لك جمهوراً أوسع بكثير دون أي مجهود إضافي — مثل وضع لافتة على طريق رئيسي بدل طريق فرعي."
+            color={T.red} />
+          <StepCard num="6" title="تعاون مع 2-3 حسابات في نفس مجالك"
+            desc="ابحث عن حسابات تتحدث عن نفس مواضيعك (ديني-سياسي خليجي) وأعد نشر منشوراتهم الجيدة وادعوهم لإعادة نشر منشوراتك. هذا يعرضك لجمهور جديد مهتم بمحتواك مباشرة."
+            color={T.teal} />
+        </div>
+      </div>
+
+      {/* ─── خطة الأسابيع الأربعة ─── */}
+      <div style={{ background: T.bg2, border: `1px solid ${T.border}`, borderRadius: 16,
+        padding: "20px 24px", direction: "rtl" }}>
+        <h3 style={{ color: T.text, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 17, fontWeight: 800, marginBottom: 6 }}>🗓️ خطتك للأسابيع الأربعة القادمة</h3>
+        <p style={{ color: T.textSub, fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 13, marginBottom: 18, lineHeight: 1.8 }}>
+          اتبع هذه الخطة خطوة بخطوة — لا تحتاج لأي خبرة تقنية:
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: 14 }}>
+          <WeekCard week="الأسبوع الأول" title="ابدأ بالصور"
+            tasks={[
+              "افتح Canva.com (مجاناً)",
+              "اختر قالب 'منشور X'",
+              "أضف صورة لأفضل منشور هذا الأسبوع",
+              "لاحظ الفرق في المشاهدات",
+            ]}
+            goal="هدف: منشور واحد مع صورة يحصل على أعلى مشاهدات الأسبوع"
+            color={T.xBlue} />
+          <WeekCard week="الأسبوع الثاني" title="غيّر توقيت النشر"
+            tasks={[
+              "انشر كل منشور مهم الخميس أو الجمعة مساءً",
+              "اختر بين 8م و10م تحديداً",
+              "أضف سؤالاً في نهاية المنشور",
+              "رد على كل تعليق خلال ساعة",
+            ]}
+            goal="هدف: زيادة التعليقات والمشاركات بنسبة 30%"
+            color={T.purple} />
+          <WeekCard week="الأسبوع الثالث" title="أنشئ أول سلسلة تغريدات"
+            tasks={[
+              "اختر موضوعاً تعرفه جيداً",
+              "اكتب 6 تغريدات مترابطة (Thread)",
+              "أضف صورة للتغريدة الأولى",
+              "انشرها الجمعة مساءً",
+            ]}
+            goal="هدف: وصول 1,000+ مشاهدة للسلسلة كاملة"
+            color={T.green} />
+          <WeekCard week="الأسبوع الرابع" title="ابدأ التعاون مع آخرين"
+            tasks={[
+              "ابحث عن 3 حسابات في مجالك",
+              "أعد نشر أفضل منشور لهم",
+              "راسلهم بشكل مباشر لترتيب تعاون",
+              "استخدم هاشتاق دولي مع كل منشور",
+            ]}
+            goal="هدف: الوصول لـ 100 متابع جديد هذا الأسبوع"
+            color={T.amber} />
+        </div>
+      </div>
+
+      {/* ─── توقعات النمو ─── */}
+      <div style={{ background: "linear-gradient(135deg,#F0FDF4,#ECFDF5)", border: "2px solid #A7F3D0",
+        borderRadius: 16, padding: "20px 24px", direction: "rtl" }}>
+        <h3 style={{ color: "#065F46", fontFamily: "'IBM Plex Sans Arabic',sans-serif",
+          fontSize: 17, fontWeight: 800, marginBottom: 12 }}>🚀 ماذا سيحدث لو طبّقت التوصيات؟</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: 12 }}>
+          {[
+            { period: "بعد شهر واحد", followers: "4,500+", views: "+40%", color: "#10B981",
+              note: "بتطبيق الصور وتغيير وقت النشر فقط" },
+            { period: "بعد 3 أشهر", followers: "6,000+", views: "+85%", color: "#059669",
+              note: "مع إضافة السلاسل والتعاون" },
+            { period: "بعد 6 أشهر", followers: "10,000+", views: "+120%", color: "#047857",
+              note: "مع تطبيق جميع التوصيات" },
+          ].map((p, i) => (
+            <div key={i} style={{ background: "white", border: `2px solid ${p.color}30`,
+              borderTop: `3px solid ${p.color}`, borderRadius: 12, padding: "16px 18px", textAlign: "center" }}>
+              <p style={{ color: "#6B7280", fontFamily: "IBM Plex Sans Arabic", fontSize: 12, marginBottom: 8 }}>{p.period}</p>
+              <p style={{ color: p.color, fontFamily: "IBM Plex Sans Arabic", fontSize: 26, fontWeight: 800 }}>{p.followers}</p>
+              <p style={{ color: "#374151", fontFamily: "IBM Plex Sans Arabic", fontSize: 12, marginBottom: 8 }}>متابع</p>
+              <div style={{ background: p.color + "15", borderRadius: 6, padding: "4px 8px", marginBottom: 8 }}>
+                <p style={{ color: p.color, fontFamily: "IBM Plex Sans Arabic", fontSize: 13, fontWeight: 700 }}>مشاهدات {p.views}</p>
+              </div>
+              <p style={{ color: "#9CA3AF", fontFamily: "IBM Plex Sans Arabic", fontSize: 11, lineHeight: 1.6 }}>{p.note}</p>
+            </div>
+          ))}
+        </div>
+        <div style={{ background: "white", border: "1px solid #A7F3D0", borderRadius: 10,
+          padding: "14px 18px", marginTop: 14 }}>
+          <p style={{ color: "#065F46", fontFamily: "IBM Plex Sans Arabic", fontSize: 13.5,
+            lineHeight: 1.9, fontWeight: 600 }}>
+            💬 <strong>كلمة أخيرة:</strong> محتواك الديني–السياسي أصيل ومميز — هذا هو أساسك القوي.
+            التوصيات لا تطلب منك تغيير ما تقوله، بل فقط <strong>كيف تقوله وتوقيت نشره وشكله المرئي</strong>.
+            الخطوة الأولى هي أصعب خطوة — لكنها أيضاً أهمها.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
 /* ══════════ MAIN COMPONENT ══════════ */
-export default function XDashboardPage() {
-  const [dark, setDark]   = useState(false);
-  const [tab,  setTab]    = useState("overview");
+export default function XDashboardPage({ dark, setDark }) {
+  const [tab,  setTab]    = useState("simple");
   const [pulse, setPulse] = useState(false);
   const [imgErr,setImgErr]= useState(false);
   const T = dark ? DARK : LIGHT;
@@ -2096,13 +2520,14 @@ export default function XDashboardPage() {
   }, []);
 
   const TABS = [
+    { id: "simple",   label: "📝 ملخص مبسط"        },
     { id: "overview", label: "📊 نظرة عامة"        },
     { id: "content",  label: "✍️ المحتوى"          },
     { id: "audience", label: "👥 الجمهور"          },
     { id: "deep",     label: "🔬 تحليل عميق"       },
     { id: "smart",    label: "🧠 الرؤى الذكية"     },
     { id: "benchmark",label: "📊 المقارنة التنافسية" },
-    { id: "forecast", label: "📈 التنبؤ والـ ROI"   },
+    { id: "forecast", label: "📈 التنبؤ وعائد الاستثمار (ROI)"   },
     { id: "recs",     label: "💡 التوصيات"         },
   ];
 
@@ -2325,22 +2750,6 @@ export default function XDashboardPage() {
               }}
             >📄 تصدير PDF</button>
 
-            {/* Dark mode toggle */}
-            <button onClick={() => setDark(d => !d)} style={{
-              width: 46, height: 26, borderRadius: 13,
-              background: dark ? "linear-gradient(135deg,#1A2233,#0D1527)" : "linear-gradient(135deg,#E0EAFA,#C8DEFF)",
-              border: `2px solid ${T.xBlue}`, cursor: "pointer",
-              display: "flex", alignItems: "center", padding: "0 3px",
-            }}>
-              <div style={{
-                width: 18, height: 18, borderRadius: "50%",
-                background: dark ? `linear-gradient(135deg,${T.xBlue},${T.purple})` : "linear-gradient(135deg,#FCD34D,#F59E0B)",
-                transform: dark ? "translateX(-18px)" : "translateX(0px)", transition: "transform 0.35s",
-                display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10,
-              }}>
-                {dark ? "🌙" : "☀️"}
-              </div>
-            </button>
           </div>
         </div>
 
@@ -2362,6 +2771,7 @@ export default function XDashboardPage() {
         </div>
 
         {/* ── CONTENT ── */}
+        {tab === "simple"   && <SimpleSummaryTab T={T} />}
         {tab === "overview" && <OverviewTab     T={T} />}
         {tab === "content"  && <ContentTab      T={T} />}
         {tab === "audience" && <AudienceTab     T={T} />}

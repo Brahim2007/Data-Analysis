@@ -247,65 +247,18 @@ function ReportCard({ report, dark, onOpen }) {
 }
 
 /* ══════════ MAIN PAGE ══════════ */
-export default function MainPage({ onNavigate }) {
-  const [dark, setDark] = useState(false);
+export default function MainPage({ onNavigate, dark, setDark }) {
   const T = dark ? DARK : LIGHT;
 
   return (
     <div style={{
-      minHeight: "100vh",
       background: T.bg,
       fontFamily: "'IBM Plex Sans Arabic',sans-serif",
       direction: "rtl",
       color: T.text,
       transition: "all 0.4s",
     }}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #1D9BF050; border-radius: 3px; }
-      `}</style>
-
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "32px 20px" }}>
-
-        {/* ── HEADER ── */}
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center",
-          marginBottom: 48, flexWrap: "wrap", gap: 16 }}>
-
-          <div>
-            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
-              <div style={{ width: 40, height: 40, borderRadius: 10,
-                background: "linear-gradient(135deg,#1D9BF0,#8B5CF6)",
-                display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20 }}>
-                📊
-              </div>
-              <h1 style={{ fontSize: 24, fontWeight: 700, color: T.text,
-                fontFamily: "'IBM Plex Sans Arabic',sans-serif" }}>
-                DataAnalyze
-              </h1>
-            </div>
-            <p style={{ color: T.textMuted, fontSize: 13, fontFamily: "'IBM Plex Sans Arabic',sans-serif" }}>
-              منصة التحليل الرقمي للمؤثرين الخليجيين
-            </p>
-          </div>
-
-          <button onClick={() => setDark(d => !d)} style={{
-            width: 48, height: 28, borderRadius: 14,
-            background: dark ? "linear-gradient(135deg,#1A2233,#0D1527)" : "linear-gradient(135deg,#E0EAFA,#C8DEFF)",
-            border: `2px solid ${dark ? "#1D9BF0" : "#93C5FD"}`,
-            cursor: "pointer", display: "flex", alignItems: "center", padding: "0 4px",
-          }}>
-            <div style={{ width: 18, height: 18, borderRadius: "50%",
-              background: dark ? "linear-gradient(135deg,#1D9BF0,#8B5CF6)" : "linear-gradient(135deg,#FCD34D,#F59E0B)",
-              transform: dark ? "translateX(-18px)" : "translateX(0px)",
-              transition: "transform 0.35s",
-              display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10 }}>
-              {dark ? "🌙" : "☀️"}
-            </div>
-          </button>
-        </div>
 
         {/* ── HERO ── */}
         <div style={{ textAlign: "center", marginBottom: 52 }}>
@@ -325,8 +278,8 @@ export default function MainPage({ onNavigate }) {
           </h2>
           <p style={{ color: T.textSub, fontSize: 15, lineHeight: 1.85,
             fontFamily: "'IBM Plex Sans Arabic',sans-serif", maxWidth: 560, margin: "0 auto" }}>
-            تحليل عميق مدعوم بالبيانات الفعلية لأبرز المؤثرين الخليجيين —
-            من المشاهدات إلى التفاعل والتوقعات المستقبلية
+            منصة SaaS متقدمة لتحليل بيانات المؤثرين والحملات الرقمية في العالم العربي —
+            تحويل البيانات الضخمة إلى رؤى استراتيجية مدعومة بالذكاء الاصطناعي
           </p>
         </div>
 
@@ -359,13 +312,6 @@ export default function MainPage({ onNavigate }) {
               <p style={{ color: T.textMuted, fontSize: 11, fontFamily: "'IBM Plex Sans Arabic',sans-serif" }}>{s.label}</p>
             </div>
           ))}
-        </div>
-
-        {/* ── FOOTER ── */}
-        <div style={{ textAlign: "center", color: T.textMuted, fontSize: 11,
-          fontFamily: "'IBM Plex Sans Arabic',sans-serif", paddingTop: 16,
-          borderTop: `1px solid ${T.border}` }}>
-          DataAnalyze · تقارير مدفوعة · مارس 2026 · البيانات من YouTube Analytics & Apify X Scraper
         </div>
 
       </div>

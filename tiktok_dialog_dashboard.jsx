@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+اتعارimport { useState, useEffect } from "react";
 import {
   AreaChart, Area, BarChart, Bar, LineChart, Line,
   RadarChart, Radar, PolarGrid, PolarAngleAxis,

@@ -276,8 +276,7 @@ const fmtNum = n =>
 /* ══════════════════════════════════════════
    MAIN
 ══════════════════════════════════════════ */
-export default function NayefDashboard() {
-  const [dark,     setDark]    = useState(false);
+export default function NayefDashboard({ dark, setDark }) {
   const [tab,      setTab]     = useState("overview");
   const [imgErr,   setImgErr]  = useState(false);
   const [printing, setPrinting]= useState(false);
@@ -725,34 +724,6 @@ export default function NayefDashboard() {
               }}
             >📄 تصدير PDF</button>
 
-            {/* Dark mode toggle */}
-            <button
-              onClick={()=>setDark(d=>!d)}
-              title={dark?"الوضع النهاري":"الوضع الليلي"}
-              style={{
-                width:46, height:26,
-                borderRadius:13,
-                background:dark?"linear-gradient(135deg,#1A1A3A,#2A2550)":"linear-gradient(135deg,#E8E0CC,#D4C8A8)",
-                border:`2px solid ${T.borderAccent}`,
-                cursor:"pointer",
-                position:"relative",
-                transition:"all 0.35s",
-                flexShrink:0,
-                display:"flex", alignItems:"center",
-                padding:"0 3px",
-              }}>
-              <div style={{
-                width:18, height:18, borderRadius:"50%",
-                background:dark?"linear-gradient(135deg,#D4AF37,#E8C84A)":"linear-gradient(135deg,#FFD700,#FFA500)",
-                boxShadow:`0 1px 4px rgba(0,0,0,0.25)`,
-                transform:dark?"translateX(-18px)":"translateX(0px)",
-                transition:"transform 0.35s",
-                display:"flex", alignItems:"center", justifyContent:"center",
-                fontSize:10,
-              }}>
-                {dark?"🌙":"☀️"}
-              </div>
-            </button>
           </div>
         </div>
 

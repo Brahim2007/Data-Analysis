@@ -1398,8 +1398,7 @@ function RecsTab({ T }) {
 /* ══════════════════════════════════════════
    MAIN
 ══════════════════════════════════════════ */
-export default function TikTokDashboard() {
-  const [dark,  setDark]  = useState(false);
+export default function TikTokDashboard({ dark, setDark }) {
   const [tab,   setTab]   = useState("overview");
   const [pulse, setPulse] = useState(false);
   const T = dark ? DARK : LIGHT;
@@ -1536,18 +1535,6 @@ export default function TikTokDashboard() {
                 boxShadow: pulse ? `0 0 8px ${T.tk}` : "none", transition: "box-shadow 0.5s" }} />
               <span style={{ color: T.tk, fontSize: 12, fontFamily: "'IBM Plex Sans Arabic',sans-serif" }}>تقرير مدفوع</span>
             </div>
-            <button onClick={() => setDark(d => !d)} style={{
-              width: 46, height: 26, borderRadius: 13,
-              background: dark ? "linear-gradient(135deg,#151B2E,#0F1420)" : "linear-gradient(135deg,#E0EAFA,#C8DEFF)",
-              border: `2px solid ${T.tk}50`, cursor: "pointer",
-              display: "flex", alignItems: "center", padding: "0 3px" }}>
-              <div style={{ width: 18, height: 18, borderRadius: "50%",
-                background: dark ? `linear-gradient(135deg,${T.tk},${T.tkCyan})` : "linear-gradient(135deg,#FCD34D,#F59E0B)",
-                transform: dark ? "translateX(-18px)" : "translateX(0px)", transition: "transform 0.35s",
-                display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10 }}>
-                {dark ? "🌙" : "☀️"}
-              </div>
-            </button>
           </div>
         </div>
 
